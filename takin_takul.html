@@ -1,13 +1,120 @@
 <!DOCTYPE html>
 <html lang="he">
   <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>טופס הזמנה - תקין תקול</title>
-</head>
-<body>
-  <h1>הזמנת גרירת תקין תקול</h1>
-  <a href="./index.html">חזרה לעמוד הראשי</a>
-</body>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טופס הזמנה - תקין תקול</title>
+  </head>
+
+  <body>
+    <h1>הזמנת גרירת תקין תקול</h1>
+    <form>
+      <div class="order details">
+        <h2>פרטי הזמנה</h2>
+        <input type="text" id="name" name="name">
+        <label for="name">שם חברה</label><br><br>
+    
+        <input type="text" id="orderNumber" name="orderNumber">
+        <label for="orderNumber">מספר הזמנה</label><br><br>
+
+        <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+        <label for="date">תאריך ההזמנה</label><br><br>
+    
+        <input type="time" id="hour" name="hour" required>
+        <label for="hour">שעת ההזמנה</label><br><br>
+    
+        <input type="text" id="FirstName" name="FirstName" required>
+        <label for="FirstName">שם המזמין</label><br><br>
+    
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        <label for="phoneNumber">טלפון המזמין</label>
+      </div>
+
+      <div class="Takin"> 
+        <h2>גרירת תקין</h2>
+        <div class="Car Info">
+          <h3>פרטי רכב תקין</h3>
+          <input type="text" id="licensePlate" name="licensePlate" required>
+          <label for="licensePlate">מספר רישוי</label><br><br>
+
+          <input type="text" id="vehicleType" name="vehicleType" required>
+          <label for="vehicleType">סוג רכב</label><br><br>
+
+          <input type="text" id="issueType" name="issueType" required>
+          <label for="issueType">סוג תקלה</label><br><br>
+
+          <input type="text" id="keyLocation" name="keyLocation" required>
+          <label for="keyLocation">מיקום המפתח</label><br><br>
+
+          <input type="text" id="vehicleCode" name="vehicleCode" required>
+          <label for="vehicleCode">קוד הרכב</label>
+        </div>
+
+        <div class="Addresses">
+          <h3>כתובות רכב תקין</h3>
+          <input type="text" id="pickupLocation" name="pickupLocation" required>
+          <label for="pickupLocation">מוצא</label><br><br>
+            
+          <input type="text" id="destination" name="destination" required>
+          <label for="destination">יעד</label>
+        </div>
+      </div>
+
+      <div class="Takul"> 
+        <h2>גרירת תקול</h2>
+        <div class="Car Info">
+          <h3>פרטי רכב תקול</h3>
+          <input type="text" id="licensePlate" name="licensePlate" required>
+          <label for="licensePlate">מספר רישוי</label><br><br>
+
+          <input type="text" id="vehicleType" name="vehicleType" required>
+          <label for="vehicleType">סוג רכב</label><br><br>
+
+          <input type="text" id="issueType" name="issueType" required>
+          <label for="issueType">סוג תקלה</label><br><br>
+
+          <input type="text" id="keyLocation" name="keyLocation" required>
+          <label for="keyLocation">מיקום המפתח</label><br><br>
+
+          <input type="text" id="vehicleCode" name="vehicleCode" required>
+          <label for="vehicleCode">קוד הרכב</label>
+        </div>
+
+        <div class="Addresses">
+          <h3>כתובות רכב תקול</h3>
+          <input type="text" id="pickupLocation" name="pickupLocation" required>
+          <label for="pickupLocation">מוצא</label><br><br>
+            
+          <input type="text" id="destination" name="destination" required>
+          <label for="destination">יעד</label>
+        </div>
+      </div>
+
+      <div class="Contacts">
+        <h2>אנשי קשר נוספים</h2>
+        <h3>איש קשר במוצא</h3>
+        <input type="text" id="contactNameAtPickup" name="contactNameAtPickup">
+        <label for="contactNameAtPickup">שם</label><br><br>
+
+        <input type="tel" id="contactPhoneAtPickup" name="contactPhoneAtPickup">
+        <label for="contactPhoneAtPickup">טלפון</label>
+
+        <h3>איש קשר ביעד</h3>
+        <input type="text" id="contactNameAtDest" name="contactNameAtDest">
+        <label for="contactNameAtDest">שם</label><br><br>
+
+        <input type="tel" id="contactPhoneAtDest" name="contactPhoneAtDest">
+        <label for="contactPhoneAtDest">טלפון</label>
+      </div>
+
+      <div class="buttons">
+        <input type="submit" value="שלח">
+        <input type="reset" value="אפס טופס">
+        <a href="./index.html">חזרה לעמוד הראשי</a>
+      </div>
+
+    </form>
+  </body>
 </html>
